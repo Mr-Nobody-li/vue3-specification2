@@ -10,8 +10,6 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "eslint": "^8.16.0",
-    "eslint-plugin-vue": "^9.0.1",
     "vue": "^3.2.25"
   },
   "devDependencies": {
@@ -20,7 +18,8 @@
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.26.0",
     "@vitejs/plugin-vue": "^2.3.3",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint": "^8.17.0",
+    "eslint-plugin-vue": "^9.1.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.0",
     "postcss": "^8.4.14",
@@ -37,22 +36,21 @@
     "stylelint-scss": "^4.2.0",
     "typescript": "^4.7.2",
     "vite": "^2.9.9",
-    "vue-eslint-parser": "^9.0.2",
     "vue-tsc": "^0.34.7"
   },
   "lint-staged": {
     "src/**/*.{ts,js}": [
-      "prettier --write",
-      "eslint --fix"
+      "eslint --fix",
+      "prettier --write"
     ],
     "src/**/*.{scss,less,styl,html}": [
       "stylelint --fix",
       "prettier --write"
     ],
     "*.vue": [
-      "prettier --write",
       "eslint --fix",
-      "stylelint --fix"
+      "stylelint --fix",
+      "prettier --write"
     ]
   }
 }
