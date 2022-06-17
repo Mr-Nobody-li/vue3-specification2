@@ -1,5 +1,5 @@
 {
-  "printWidth": 100,
+  "printWidth": 70,
   "tabWidth": 2,
   "useTabs": false,
   "semi": false,
@@ -9,6 +9,7 @@
   "trailingComma": "none",
   "bracketSpacing": true,
   "bracketSameLine": false,
-  "arrowParens": "always",
-  "endOfLine": "lf"
+  "arrowParens": "avoid",
+  "endOfLine": "auto",
+  "singleAttributePerLine": true
 }

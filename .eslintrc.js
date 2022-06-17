@@ -6,7 +6,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:vue/vue3-recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
+    'prettier'
   ],
   plugins: ['@typescript-eslint'],
   parser: 'vue-eslint-parser',
@@ -61,7 +62,7 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': ['off'],
     // 强制标签自闭合
     'vue/html-self-closing': [
-      'error',
+      'warn',
       {
         html: {
           void: 'always',
