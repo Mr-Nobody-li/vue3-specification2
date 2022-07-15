@@ -29,7 +29,7 @@ module.exports = {
     // 使用 === 而不是 ==
     eqeqeq: ['error', 'smart'],
     // 多个运算符需要用（）分隔
-    'no-mixed-operators': 'error',
+    // 'no-mixed-operators': 'error',
     // 当存在更简单的替代方案时，不允许使用三元运算符
     'no-unneeded-ternary': 'error',
     // 强制块语句的最大可嵌套深度
