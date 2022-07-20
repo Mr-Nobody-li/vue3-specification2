@@ -5,10 +5,7 @@
  * @LastEditTime: 2022-07
  * @Description: 
 -->
-<script
-  setup
-  lang="ts"
->
+<script setup lang="ts">
 defineProps<{ msg: string }>()
 
 const count = ref(0)
