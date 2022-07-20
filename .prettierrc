@@ -11,5 +11,6 @@
   "bracketSameLine": false,
   "arrowParens": "always",
   "endOfLine": "auto",
-  "singleAttributePerLine": true
+  "singleAttributePerLine": true,
+  "htmlWhitespaceSensitivity": "ignore"
 }
