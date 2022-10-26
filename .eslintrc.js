@@ -21,6 +21,8 @@ module.exports = {
     }
   },
   rules: {
+    'no-debugger':
+      process.env.NODE_ENV === 'development' ? 'off' : 'error',
     'no-undef': 'off',
     // 数组函数需要有返回值
     'array-callback-return': 'error',
@@ -39,7 +41,7 @@ module.exports = {
     // 强制回调函数最大嵌套深度
     'max-nested-callbacks': [1, 3],
     // 强制文件的最大行数
-    'max-lines': ['error', 500],
+    'max-lines': ['error', 300],
     // 建议使用const
     'prefer-const': [
       'error',
