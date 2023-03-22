@@ -1,13 +1,21 @@
+/*
+ * @Author: Mr-Nobody-li
+ * @Date: 2022-07
+ * @LastEditors: Mr-Nobody-li
+ * @LastEditTime: 2023-03
+ * @Description:eslint
+ */
+console.log(process.env.NODE_ENV, 111)
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
   },
   extends: [
     'eslint:recommended',
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier'
+    'prettier',
   ],
   plugins: ['@typescript-eslint'],
   parser: 'vue-eslint-parser',
@@ -17,12 +25,11 @@ module.exports = {
     sourceType: 'module',
     jsxPragma: 'React',
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   rules: {
-    'no-debugger':
-      process.env.NODE_ENV === 'development' ? 'off' : 'error',
+    'no-debugger': 'off',
     'no-undef': 'off',
     // 数组函数需要有返回值
     'array-callback-return': 'error',
@@ -37,7 +44,7 @@ module.exports = {
     // 强制块语句的最大可嵌套深度
     'max-depth': ['error', 4],
     // 限制函数定义中最大参数个数
-    'max-params': ['error', 3],
+    'max-params': ['error', 4],
     // 强制回调函数最大嵌套深度
     'max-nested-callbacks': [1, 3],
     // 强制文件的最大行数
@@ -47,11 +54,9 @@ module.exports = {
       'error',
       {
         // 在解构中，所有变量都应该是const
-        destructuring: 'all'
-      }
+        destructuring: 'all',
+      },
     ],
-    // 使用点号
-    'dot-notation': 'error',
     // 适配eslint 未使用的变量
     '@typescript-eslint/no-unused-vars': 'error',
     // 允许非空断言
@@ -62,6 +67,7 @@ module.exports = {
     '@typescript-eslint/no-this-alias': 'off',
     // 允许使用any类型
     '@typescript-eslint/no-explicit-any': ['off'],
+    '@typescript-eslint/no-empty-function': 'off',
     // 强制标签自闭合
     'vue/html-self-closing': [
       'warn',
@@ -69,11 +75,12 @@ module.exports = {
         html: {
           void: 'always',
           normal: 'never',
-          component: 'always'
+          component: 'always',
         },
         svg: 'always',
-        math: 'always'
-      }
-    ]
-  }
+        math: 'always',
+      },
+    ],
+    'vue/component-definition-name-casing': ['error', 'kebab-case'],
+  },
 }
