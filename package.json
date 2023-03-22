@@ -10,7 +10,14 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "@element-plus/icons-vue": "^2.1.0",
+    "@jt-icons/icon-vue-components": "^1.1.36",
+    "axios": "^1.3.4",
+    "dayjs": "^1.11.7",
+    "element-plus": "^2.3.1",
+    "pinia": "^2.0.33",
+    "vue": "^3.2.25",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
@@ -21,12 +28,12 @@
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-vue": "^9.1.1",
-    "postcss-html": "^1.5.0",
-    "postcss-scss": "^4.0.5",
-    "sass": "^1.55.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.0",
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.5",
     "prettier": "latest",
+    "sass": "^1.55.0",
     "stylelint": "^14.8.5",
     "stylelint-config-html": "^1.0.0",
     "stylelint-config-prettier": "^9.0.3",
