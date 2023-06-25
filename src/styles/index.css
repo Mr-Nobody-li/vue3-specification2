@@ -1,0 +1,24 @@
+@tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-2xl font-semibold;
+  }
+  h2 {
+    @apply text-xl font-semibold;
+  }
+  h3 {
+    @apply text-lg font-semibold;
+  }
+  h4 {
+    @apply text-base font-semibold;
+  }
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+#app {
+  --el-color-primary: #0c7edf;
+}

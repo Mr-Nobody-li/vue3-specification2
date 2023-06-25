@@ -1,43 +1,16 @@
+/*
+ * @Author: Mr-Nobody-li
+ * @Date: 2022-07
+ * @LastEditors: Mr-Nobody-li
+ * @LastEditTime: 2023-06
+ * @Description: stylelint配置文件
+ */
 module.exports = {
-  extends: [
-    'stylelint-config-recommended',
-    'stylelint-config-recess-order',
-    'stylelint-config-html'
-  ],
-  // 针对后缀为这些文件的使用postcss-scss格式化
-  overrides: [
-    {
-      files: ['*.sass', '*.scss', '**/*.sass', '**/*.scss'],
-      customSyntax: 'postcss-scss'
-    }
-  ],
+  extends: ['stylelint-config-recess-order', 'stylelint-config-standard-vue'],
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts'],
+  defaultSeverity: 'error',
   rules: {
-    'at-rule-no-unknown': null,
-    'no-descending-specificity': null,
-    'function-no-unknown': null,
-    'font-family-no-missing-generic-family-keyword': null
-    // "stylus/at-extend-style": ["@extend"],
-    // "stylus/declaration-colon": ["always"],
-    // "stylus/hash-object-property-comma": [
-    //   "always",
-    //   {
-    //     trailing: "never",
-    //   },
-    // ],
-    // "stylus/indentation": 2,
-    // indentation: null,
-    // "stylus/media-feature-colon": ["always"],
-    // "stylus/no-at-require": [true],
-    // "stylus/pythonic": [
-    //   "never",
-    //   {
-    //     atblock: "never",
-    //   },
-    // ],
-    // "stylus/selector-list-comma": ["always"],
-    // "stylus/semicolon": ["always"],
-    // "stylus/single-line-comment": ["never"],
+    'no-empty-source': null,
+    'selector-class-pattern': null,
   },
-  defaultSeverity: 'warning'
 }
