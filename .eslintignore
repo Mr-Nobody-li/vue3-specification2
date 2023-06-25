@@ -1,0 +1,5 @@
+/dist/
+/public/
+/node_modules/
+*.html
+src/views/privacy/**
