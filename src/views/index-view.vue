@@ -2,7 +2,7 @@
  * @Author: Mr-Nobody-li
  * @Date: 2023-03
  * @LastEditors: Mr-Nobody-li
- * @LastEditTime: 2023-03
+ * @LastEditTime: 2023-06
  * @Description: index.vue
 -->
 <template>
@@ -10,5 +10,3 @@
 </template>
 
 <script lang="ts" setup></script>
-
-<style lang="scss" scoped></style>

@@ -2,7 +2,7 @@
  * @Author: Mr-Nobody-li
  * @Date: 2022-07
  * @LastEditors: Mr-Nobody-li
- * @LastEditTime: 2023-03
+ * @LastEditTime: 2023-06
  * @Description:vite config
  */
 import { defineConfig } from 'vite'
@@ -19,15 +19,5 @@ export default defineConfig({
         replacement: resolve(__dirname, 'src'),
       },
     ],
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: '@use "@/styles/index.scss" as *;',
-      },
-    },
-    modules: {
-      localsConvention: 'camelCaseOnly',
-    },
   },
 })
