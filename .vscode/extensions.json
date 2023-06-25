@@ -3,6 +3,7 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "stylelint.vscode-stylelint",
-    "obkoro1.korofileheader"
+    "obkoro1.korofileheader",
+    "cpylua.language-postcss"
   ]
 }
